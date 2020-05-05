@@ -5,6 +5,5 @@ def new_in_list(my_list, idx, element):
         return newlist
     else:
         for i in newlist:
-            if i == idx:
-                newlist[idx] = element
+            newlist[idx] = element
     return newlist
