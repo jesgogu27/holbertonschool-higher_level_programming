@@ -12,7 +12,7 @@ class Square():
             ValueError: Raises error if value if is out of range
         """
         if type(size) is not int:
-            raise ValueError("size must be an integer")
+            raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
