@@ -1,26 +1,25 @@
 #!/usr/bin/python3
 def add_integer(a, b=98):
     """
-        add_integer plus two number integer
+    add_integer: plus two number integer
 
-        Arguments:
-            a {int} -- integer one
-            b {int} -- integer two
+    Arguments:
+        a {int} -- integer one
+        b {int} -- integer two
 
-        Returns:
-            int -- plus of integers
+    Raises:
+        TypeError: if arguments is not a integer
+        TypeError: if argumest  is not a integer
 
-        Raises:
-            TypeError: if any arguments is not a integer
+    Returns:
+        int -- plus of integers
     """
-    try:
-        x = int(a)
-        y = int(b)
-        return x + y
-    except ValueError:
-        if a is not int:
-            raise TypeError("a must be an integer")
-
-    except Exception as e:
-        if b is not int:
+    if type(a) is not int and type(a) is not float:
+        raise TypeError("a must be an integer")
+    else:
+        if type(b) is not int and type(b) is not float:
             raise TypeError("b must be an integer")
+
+    x = int(a)
+    y = int(b)
+    return x + y
