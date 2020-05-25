@@ -1,23 +1,18 @@
 #!/usr/bin/python3
-"""
-Function that adds 2 integers
-"""
+"""Integers addition"""
+
 
 def add_integer(a, b=98):
-
-    """
-    add_integer: plus two number integer
-
+    """[summary]
     Arguments:
-        a {int} -- integer one
-        b {int} -- integer two
-
+        a {[type]} -- [description]
+    Keyword Arguments:
+        b {int} -- [description] (default: {98})
     Raises:
-        TypeError: if arguments is not a integer
-        TypeError: if argumest  is not a integer
-
+        TypeError: [description]
+        TypeError: [description]
     Returns:
-        int -- plus of integers
+        [type] -- [description]
     """
     if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
