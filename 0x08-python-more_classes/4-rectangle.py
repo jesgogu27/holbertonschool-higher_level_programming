@@ -60,5 +60,5 @@ class Rectangle:
         return cad
 
     def __repr__(self):
-        """printed rep"""
-        return ("Rectangle({:d}, {:d})".format(self.__width, self.__height)0)
+        """printed repr"""
+        return ("Rectangle({:d}, {:d})".format(self.__width, self.__height))
