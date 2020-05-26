@@ -36,3 +36,25 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        """Return area"""
+        return self.__width * self.__height
+
+    def perimeter(self):
+        """return permriter of rectangle"""
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        else:
+            return (self.__width * 2) + (self.__height * 2)
+
+    def __str__(self):
+        """Print # for user"""
+        cad = ""
+        if self.__width == 0 or self.__height == 0:
+            return cad
+
+        for width in range(self.__height - 1):
+            cad = cad + ("#" * self.__width) + '\n'
+        cad = cad + ("#" * self.__width)
+        return cad
