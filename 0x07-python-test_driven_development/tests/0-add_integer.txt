@@ -86,6 +86,7 @@ Works if not have arguments
     Traceback (most recent call last):
     TypeError: b must be an integer
 
-    >>> add_integer('hi', 9)
+    >>> add_integer(float('NaN'))
     Traceback (most recent call last):
-    TypeError: a must be an integer
+      ...
+    ValueError: cannot convert float NaN to integer
