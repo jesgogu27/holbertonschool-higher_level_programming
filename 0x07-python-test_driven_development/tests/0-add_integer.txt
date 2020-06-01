@@ -84,7 +84,3 @@ Works if not have arguments
     >>> add_integer('hi', 9)
     Traceback (most recent call last):
     TypeError: a must be an integer
-
-    >>> add_integer(True, 35)
-    36
-    
