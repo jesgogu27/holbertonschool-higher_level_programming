@@ -13,19 +13,19 @@ Numbers
 ::
 
     >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(1, 2)
+    3
+
+    >>> add_integer(100, -2)
+    98
+
     >>> add_integer(2)
     100
-
-    >>> add_integer(5, -4)
-    1
-
-    >>> add_integer(8, 2)
-    10
 
 ::
 works with floating-point value
 
-    >>> add_integer(8.5, 4)
+    >>> add_integer(100.3, -2)
     12
 
     >>> add_integer(1, 3.5)
