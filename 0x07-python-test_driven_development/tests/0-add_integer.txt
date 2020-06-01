@@ -10,9 +10,6 @@ This library is very simple, since it only has one function called
 Numbers
 =======
 
-``add_integer()`` returns the sum of its arguments.  For numbers,
-that value is equivalent to using the ``+`` operator.
-
 ::
 
     >>> add_integer = __import__('0-add_integer').add_integer
