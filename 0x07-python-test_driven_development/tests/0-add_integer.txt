@@ -64,6 +64,11 @@ Works if not have arguments
       ...
     SyntaxError: invalid syntax
 
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+          ...
+    OverflowError: cannot convert float infinity to integer
+
     >>> try:
     ...     print(add_integer(4, "School"))
     ... except Exception as e:
