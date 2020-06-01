@@ -69,10 +69,18 @@ Works if not have arguments
           ...
     OverflowError: cannot convert float infinity to integer
 
-    >>> add_integer(var)
-    Traceback (most recent call last):
-          ...
-    NameError: name 'var' is not defined
+    >>> try:
+    ...     print(add_integer(4, "School"))
+    ... except Exception as e:
+    ...     print(e)
+    b must be an integer
+
+
+    >>> try:
+    ...     print(add_integer(None))
+    ... except Exception as e:
+    ...     print(e)
+    a must be an integer
 
     >>> add_integer(2, [2, 3])
     Traceback (most recent call last):
@@ -81,9 +89,3 @@ Works if not have arguments
     >>> add_integer('hi', 9)
     Traceback (most recent call last):
     TypeError: a must be an integer
-
-    >>> add_integer(True, 35)
-    36
-
-    >>> print(add_integer(--1))
-    99
