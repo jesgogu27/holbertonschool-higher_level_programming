@@ -22,9 +22,6 @@ that value is equivalent to using the ``+`` operator.
     >>> add_integer(5, -4)
     1
 
-    >>> add_integer(2, 2)
-    4
-
     >>> add_integer(8, 2)
     10
 
@@ -90,3 +87,4 @@ Works if not have arguments
 
     >>> add_integer(True, 35)
     36
+    
