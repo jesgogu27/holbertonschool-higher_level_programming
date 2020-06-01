@@ -26,7 +26,7 @@ Numbers
 works with floating-point value
 
     >>> add_integer(100.3, -2)
-    12
+    98
 
     >>> add_integer(1, 3.5)
     4
