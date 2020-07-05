@@ -26,11 +26,7 @@ All the elements in matrix are not a list:
 	...
 	TypeError: matrix must be a matrix (list of lists) of integers/floats
 
-Div is a string:
-    >>> matrix_divided([[1, 2, 3], [4, 5, 6]], "12")
-    	 Traceback (most recent call last):
-	 ...
-	 TypeError: div must be a number
+
 
 Div is equal to 0:
     >>> matrix_divided([[1, 2, 3], [4, 5, 6]], 0)
