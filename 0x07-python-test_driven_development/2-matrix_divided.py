@@ -25,6 +25,14 @@ def matrix_divided(matrix, div):
         raise TypeError("matrix must be a matrix (list of lists)" +
                         " of integers/floats")
 
+    if len(matrix) == 0:
+        raise TypeError("matrix must be a matrix (list of lists)" +
+                        " of integers/floats")
+
+    for row in matrix:
+        if type(row) is not list:
+            raise TypeError("matrix must be a matrix (list of lists)" +
+                            " of integers/floats")
 
     mat = [x[:] for x in matrix]
     tam = len(matrix[0])
@@ -35,8 +43,8 @@ def matrix_divided(matrix, div):
         if tam != len(matrix[x]):
             raise TypeError("Each row of the matrix must have the same size")
         for y in range(len(matrix[x])):
-            if type(mat[x][y]) is not int and \
-               type(mat[x][y]) is not float:
+            if type(matrix[x][y]) is not int and \
+               type(matrix[x][y]) is not float:
                 raise TypeError("matrix must be a matrix (list of lists)" +
                                 " of integers/floats")
 
