@@ -15,25 +15,24 @@ def matrix_divided(matrix, div):
         matrix -- main matrix
         div -- divider
     """
-    m = []
-    eerror = "matrix must be a matrix (list of lists) of integers/floats"
-    if type(div) not in [int, float]:
-        raise TypeError('div must be a number')
     if div == 0:
-        raise ZeroDivisionError('division by zero')
-    try:
-        fila = matrix[1][0]
-    except TypeError:
-        return (eerror)
-    for i in range(len(matrix)):
+        raise ZeroDivisionError("division by zero")
 
-        tam = len(matrix[i])
-        fl = []
-        for j in range(tam):
-            if type(j) not in [int, float]:
-                raise TypeError(eerror)
-            item = matrix[i][j]
-            r = round(item / div, 2)
-            fl.append(r)
-        m.append(fl)
-    return(m)
+    if type(div) is not int and type(div) is not float:
+        raise TypeError("div must be a number")
+    x = 0
+    y = 0
+    mat = [x[:] for x in matrix]
+    for x in range(len(matrix)):
+        for y in range(len(matrix)):
+            if len(matrix[x]) != len(matrix[y]):
+                raise TypeError("Each row of the matrix must" +
+                                "have the same size")
+
+            if type(matrix[x][y]) is not int and \
+               type(matrix[x][y]) is not float:
+                raise TypeError("matrix must be a matrix (list of lists)" +
+                                " of integers/floats")
+
+            mat[x][y] = round(matrix[x][y] / div, 2)
+    return mat
