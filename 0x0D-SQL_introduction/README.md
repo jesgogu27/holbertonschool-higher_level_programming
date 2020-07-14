@@ -11,4 +11,3 @@
     • How to INSERT, UPDATE or DELETE data
     • What are subqueries
     • How to use MySQL functions
-
