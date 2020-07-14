@@ -1,0 +1,2 @@
+--PRINTS TABLES
+SHOW CREATE TABLE first_table;
