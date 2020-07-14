@@ -1,2 +1,2 @@
---list all database
+--SHOW DATABASES CREATED
 SHOW DATABASES;
