@@ -9,6 +9,8 @@ if n == 1:
 else:
     if n == 2:
         print('{} argument:'.format(n - 1))
+        for i in range(1, n):
+            print('{}'": "'{:s}'.format(i, argv[i]))
     else:
         print('{} arguments:'.format(n - 1))
         for i in range(1, n):
