@@ -51,7 +51,7 @@ class Square:
         return result
 
     def my_print(self):
-        """prints in stdout the square with the character #"""
+        """prints in stdout"""
         for x in range(self.__size):
             print("#" * self.__size)
         if self.size == 0:
