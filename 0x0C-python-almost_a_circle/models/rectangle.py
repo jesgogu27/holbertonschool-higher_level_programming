@@ -76,7 +76,6 @@ class Rectangle(Base):
 
     def display(self):
         '''print a rectangle with '#' character'''
-
         print('\n' * self.__y, end="")
         for i in range(self.__height):
             print(' ' * self.__x, end='')
