@@ -85,7 +85,7 @@ class Rectangle(Base):
                 else:
                     print("#")
 
-	 def __str__(self):
+    def __str__(self):
         '''return an argument to each attribute'''
         return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
                                                 self.id, self.__x, self.__y,
