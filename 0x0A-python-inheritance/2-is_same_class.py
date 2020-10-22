@@ -4,6 +4,7 @@
  is true o false
 """
 
+
 def is_same_class(obj, a_class):
 
     """
