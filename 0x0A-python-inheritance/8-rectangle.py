@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
    Class BaseGeometry
 """
@@ -16,7 +15,8 @@ class Rectangle(BaseGeometry):
         width - width rectangle
         height - height rectangle
         """
-        self.integer_validator(width, height)
-        self.integer_validator(height, height)
+        self.integer_validator('width', height)
+        self.integer_validator('height', height)
+
         self.__width = width
         self.__height = height
