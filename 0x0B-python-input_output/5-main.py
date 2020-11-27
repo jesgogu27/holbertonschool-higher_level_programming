@@ -1,4 +1,3 @@
-guillaume@ubuntu:~/0x0B$ cat 5-main.py
 #!/usr/bin/python3
 to_json_string = __import__('5-to_json_string').to_json_string
 
