@@ -3,13 +3,19 @@
 
 
 def pascal_triangle(n):
-    my_list = []
-    if n <= 0:
-        return my_list
-
-    row = [1]
-    k = [0]
-    for x in range(max(n, 0)):
-        print(row)
-        row = [l + r for l, r in zip(row + k, k + row)]
-    return my_lis
+    """Pascal's triangle
+    Arguments:
+        n {int} -- height of triangle
+    Returns:
+        list -- list of lists of numbers
+    """
+    ls = []
+    for i in range(n):
+        ls.append([])
+        ls[i].append(1)
+        for j in range(1, i):
+            num = ls[i - 1][j - 1] + ls[i - 1][j]
+            ls[i].append(num)
+        if(len(ls) > 1):
+            ls[i].append(1)
+    return ls
