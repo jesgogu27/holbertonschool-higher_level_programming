@@ -11,7 +11,12 @@ def roman_to_int(roman_string):
 
     for x in range(0, len(roman_string)):
         if x > 0 and rom_num[roman_string[x]] > rom_num[roman_string[x - 1]]:
-            add += rom_num[roman_string[x]] - rom_num[roman_string[x - 1]] * 2
+            j = rom_num[roman_string[x]]
+            k = rom_num[roman_string[x - 1]] * 2
+            print(j)
+            print("este es el valor de k", k)
+            r = j - k
+            add += r
         else:
             add += rom_num[roman_string[x]]
     return add
